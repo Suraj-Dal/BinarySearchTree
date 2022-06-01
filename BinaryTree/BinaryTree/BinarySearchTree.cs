@@ -25,7 +25,7 @@ namespace BinaryTree
             {
                 if (this.left == null)
                     this.left = new BinarySearchTree<T>(value);
-                else 
+                else
                     this.left.AddNode(value);
             }
             else
@@ -38,17 +38,17 @@ namespace BinaryTree
         }
         public void Display()
         {
-            if (this.left != null)
-            {
-                this.leftIdx++;
-                this.left.Display();
-            }
-            Console.WriteLine(this.data);
-            if (this.right != null)
-            {
-                rightIdx++;
-                this.right.Display();
-            }
+                if (this.left != null)
+                {
+                    this.leftIdx++;
+                    this.left.Display();
+                }
+                Console.WriteLine(this.data);
+                if (this.right != null)
+                {
+                    rightIdx++;
+                    this.right.Display();
+                }
         }
     }
 }
